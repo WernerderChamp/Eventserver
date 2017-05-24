@@ -10,7 +10,7 @@ var ytpenalty=[];
 bot.on("ready", () => {
 	var time=moment().valueOf();
 	console.log("Connected");
-	bot.user.setGame("Use -help");
+	bot.user.setGame("Use $points");
 	if (bugtime==0) return;
 	var diff = time-bugtime;
 	bot.channels.get("289734389578072064").send("Warning: Bot got disconnected :warning:\nReconnected after "+diff+" ms\nDetailed Logging:\n"+buglog);
